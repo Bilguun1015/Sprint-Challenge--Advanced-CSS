@@ -9,13 +9,16 @@
     h1{
         font-size: 4rem;
         padding-top: 1.5rem;
+        @media @phone{
+            font-size: 3rem;
+        }
     }
     nav{
+        max-width: 70%;
         font-size: 1.6rem;
         padding-top: 1.5rem;
         padding-bottom: 1rem;
         display: flex;
-        width: 40%;
         margin: 0 auto;
         a{
             .nav-a-mixin();
