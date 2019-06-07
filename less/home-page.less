@@ -3,6 +3,9 @@
 .home {
 
   .intro {
+    img{
+      border-radius: 6px;
+    }
 
     h2 {
       padding: 15px;
@@ -58,6 +61,15 @@
       }
 
       .btn {
+        .button-mixin(black, 2rem, white, 5px, pointer);
+        border: 1px solid black;
+        width: 30%;
+        padding: 5px;
+        text-align: center;
+        &:hover{
+          border: 1px solid black;
+          .button-mixin(white, 2rem, black, 5px, pointer);
+        }
       }
     }
 

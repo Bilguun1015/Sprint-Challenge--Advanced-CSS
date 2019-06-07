@@ -1,1 +1,24 @@
 // Mixins Here
+
+//mixing for nav a tag
+.nav-a-mixin(){
+    width: 100%;
+    text-decoration: none;
+    color: @nav-font;
+    justify-content: space-evenly;
+}
+
+.nav-a-hover-mixin(){
+    color: lighten(@nav-font,20%);
+}
+
+//mixin for sign up button
+
+.button-mixin(@buttonbg, @buttonsize, @color, @radius, @cursor){
+    background-color: @buttonbg;
+    font-size: @buttonsize;
+    color: @color;
+    border-radius: @radius;
+    cursor: @cursor;
+}
+
