@@ -162,9 +162,18 @@ p {
 }
 .navigation {
   width: 100%;
-  background: #F6F6F6;
+  background-color: #F6F6F6;
   border: 1px solid #F1F1F1;
   text-align: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+@media (max-width: 500px) {
+  .navigation {
+    background-color: hsla(90, 90%, 50%, 0.1);
+    padding: 10px;
+  }
 }
 .navigation h1 {
   font-size: 4rem;
